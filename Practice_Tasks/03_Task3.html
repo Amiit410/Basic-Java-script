@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task3</h1>
+
+
+
+    <script>
+        function calculate(){
+            var params = arguments;
+            var sum = 0;
+            var count = params.length;
+            var max = params[0];
+            for(var i of params){
+                sum += i;
+                if(i>max){
+                    max = i;
+                }
+            }
+
+            return {sum,count,max};
+        }
+
+        var {sum,count,max} = calculate(10,20,5,40);
+
+        document.writeln(`sum : ${sum} , Count : ${count}, Max : ${max}`);
+        
+    </script>
+        
+</body>
+</html>

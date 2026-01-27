@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task4</h1>
+
+
+
+    <script>
+        function functiontype(callback){
+            var tostring = callback.toString();
+            if(tostring.startsWith("function")){
+                return "normal function";
+            }
+            else if(tostring.includes("=>"))
+            {
+                return "arrow function"
+            }
+            else
+            {
+                return "Unknown function type "
+            }
+        }
+        var arrow = (i)=>i*2;
+        var normal = function (i){
+            return i*2;
+        }
+        var type = functiontype(normal);
+
+        document.writeln(`functiontype : ${type}`);
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task2</h1>
+
+        <!-- Create your own version of map.
+
+        Requirements
+
+        Function name: myMap
+
+        Parameters:
+
+        array
+
+        callback function
+
+        Must return a new array
+
+        Must NOT use:
+
+        map() -->
+
+
+
+        <script>
+
+            function mymap(arr,delegate){
+                var newArr = Array();
+                var result = 0;                  
+                for(var i of arr){
+                    result = delegate(i);
+                    newArr.push(result)
+                }
+                return newArr;
+            }
+
+
+            var result = mymap([10,20,30],(i)=>i*3);
+
+            document.writeln(`${result}<br/>`);
+            
+        </script>
+</body>
+</html>

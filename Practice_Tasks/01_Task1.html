@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <!-- 1️⃣ Remove the last element from numbers
+    2️⃣ Add 100 at the beginning of the same array
+    3️⃣ Create a new array where each value is multiplied by 2
+
+    ❗ Original numbers array must not change in this step
+    4️⃣ Print:
+
+    original array
+
+    new array -->
+
+
+
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+        let originalNumbers = [...numbers]; // backup (non-mutator)
+
+        numbers.pop();      //Remove the last element from numbers
+        numbers.unshift(100); //Add 100 at the beginning of the same array
+
+        var newArray = numbers.map((i)=>i*2);       //Create a new array where each value is multiplied by 2
+
+        document.writeln(numbers+"<br/>");
+        document.writeln(newArray+"<br/>");
+        
+    </script>
+</body>
+</html>
