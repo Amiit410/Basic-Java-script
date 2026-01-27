@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="divtable1">
+        <table id="table1">
+            <thead class="t1head">
+                <tr id="t1hr1">
+                    <!-- <td colspan="4"><input type="text" class="show" id="_result" ></td> -->
+                    <td colspan="4" id="thr1d1"><textarea class = "show" name="IO" id="_result" readonly></textarea></td>
+                </tr>
+                <tr id="t1hr2">
+                    <!-- <td colspan="4"><input type="text" class="show" id="_result" ></td> -->
+                    <td colspan="4" id="thr2d1"><textarea class = "show" name="IO" id="_input" readonly></textarea></td>
+                </tr>
+                
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td><input type="button" class = "Task" id="_clr" value = "clr" onclick="_clear()"></td>
+                    <td><input type="button" class = "Task" id="_add" value = "+" onclick="_operation(value)"></td>
+                    <td><input type="button" class = "Task" id="_sub" value = "-" onclick="_operation(value)"></td>
+                    <td><input type="button" class = "Task" id="_mult" value = "x" onclick="_operation(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_1" value = "1" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_2" value = "2" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_3" value = "3" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "Task" id="_div" value = "/" onclick="_operation(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_4" value = "4" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_5" value = "5" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_6" value = "6" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "Task" id="_equals" value = "=" onclick="result()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_7" value = "7" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_8" value = "8" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_9" value = "9" onclick="_digit(id)"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_dot" value = "." onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_0" value = "0" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_00" value = "00" onclick="_digit(id)"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        var operator;
+        var initialvalue = 0;
+        var finalvalue = 0;
+        function _clear()
+        {
+            operator;
+            initialvalue = 0
+            finalvalue = 0;
+            document.getElementById("_input").value = null;
+            document.getElementById("_result").value = null;
+        }
+
+        function _digit(id)
+        {
+            document.getElementById("_result").value = null;
+            
+            var v1 = document.getElementById("_input").value;
+
+            var val = v1 + document.getElementById(id).value;
+            document.getElementById("_input").value = val;
+        }
+
+        function result()
+        {
+            var v1 = document.getElementById("_input").value;
+
+            document.getElementById("_input").value = null;
+
+            if(v1 == "" || v1 == 'undefined'){
+                alert("Enter valid number");
+                return false;
+            }
+            finalvalue = parseFloat(v1);
+            
+            var ans;
+            if(operator == "+")
+            {
+                ans= initialvalue + finalvalue;
+                document.getElementById("_result").value = `${initialvalue} + ${finalvalue} = ${ans}`;
+            }
+            if(operator == "-")
+            {
+                ans = initialvalue - finalvalue;
+                document.getElementById("_result").value = `${initialvalue} - ${finalvalue} = ${ans}`;
+            }
+            if(operator == "x")
+            {
+                ans = initialvalue * finalvalue;
+                document.getElementById("_result").value = `${initialvalue} * ${finalvalue} = ${ans}`;
+            }
+            if(operator == "/")
+            {
+                if(finalvalue == 0)
+                {
+                    document.getElementById("_result").value = "not divisible by 0";
+                    return false;
+                }
+                ans = initialvalue / finalvalue;
+                document.getElementById("_result").value = `${initialvalue} / ${finalvalue} = ${ans}`;
+            }
+        }
+        function _operation(optr)
+        {
+            var v1 = document.getElementById("_input").value;
+            if(v1 == "" || v1 == 'undefined'){
+                alert("Enter valid number");
+                return false;
+            }
+            operator = optr;
+            initialvalue = parseFloat(v1);
+            document.getElementById("_input").value = null;
+            
+        }
+    </script>
+</body>
+</html>
