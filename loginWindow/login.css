@@ -1,14 +1,20 @@
 
-#body1{
-    text-align: center;
+.mainbody{
+    background-color: rgba(196, 194, 194, 0.229);
+}
 
-    border: 2px solid rgb(243, 241, 241);
-    height : 450px;
-    width: 450px;
+
+#div1{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgb(243, 241, 241);
+    height : 300px;
+    width: 380px;
     background-color: #fff;
     box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 80px;
+    border-radius: 10px;
 }
 
 .input{
@@ -16,8 +22,8 @@
     width: 350px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
-    border-radius: 8px;
-    border: 1px solid rgb(164, 170, 179);
+    border-radius: 6px;
+    border: 2px solid rgb(24, 24, 24);
     box-shadow: 2px 2px #0000001a;
     padding-left: 15px;
 }
@@ -40,8 +46,27 @@
 }
 
 #div5{
-    margin-top: 20px;
-    height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
+#loginbtn{
+    background-color: rgba(9, 112, 230, 0.783);
+    text-align: center;
+    font-size: medium;
+    color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    width: 375px;
+}
+
+#div6{
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+#span1,#span2{
+    padding: 10px;
+}
 
