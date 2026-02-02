@@ -23,7 +23,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
     border-radius: 6px;
-    border: 2px solid rgb(24, 24, 24);
+    border: 1px solid rgba(24, 24, 24, 0.331);
     box-shadow: 2px 2px #0000001a;
     padding-left: 15px;
 }
