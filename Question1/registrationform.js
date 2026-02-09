@@ -2,16 +2,24 @@ var IsFullName = false;
 function fullnameValidation(){
     var fullname = document.getElementById("_FN").value;
     var pattern = new RegExp(/^([A-Za-z]+)\s([A-Za-z]+)\s([A-Za-z]+)$/);
-
+    
     if(pattern.test(fullname))
     {
         IsFullName = true;
         document.getElementById("_FN").style.color = "black";
+        document.getElementById("_FN").style.border = "1px solid black";
+    }
+    else if(fullname == null)
+    {
+        IsFullName = false;
+        // document.getElementById("_FN").style.color = "red";
+        document.getElementById("_FN").style.border = "1px solid red";
     }
     else
     {
         IsFullName = false;
         document.getElementById("_FN").style.color = "red";
+        document.getElementById("_FN").style.border = "1px solid red";
     }
 }
 
@@ -24,11 +32,20 @@ function EmailValidation(){
     {
         IsEmail = true;
         document.getElementById("_Email").style.color = "black";
+        document.getElementById("_Email").style.border = "1px solid black";
+
+    }
+    else if(Email == null)
+    {
+        IsEmail = false;
+        // document.getElementById("_Email").style.color = "red";
+        document.getElementById("_Email").style.border = "1px solid red";
     }
     else
     {
         IsEmail = false;
         document.getElementById("_Email").style.color = "red";
+        document.getElementById("_Email").style.border = "1px solid red";
     }
 }
 
@@ -40,11 +57,18 @@ function MobileValidation(){
     {
         IsMobile = true;
         document.getElementById("_MN").style.color = "black";
+        document.getElementById("_MN").style.border = "1px solid black";
+    }
+    else if(mobilenumber == null)
+    {
+        IsMobile = false;
+        document.getElementById("_MN").style.border = "1px solid red";
     }
     else
     {
         IsMobile = false;
         document.getElementById("_MN").style.color = "red";
+        document.getElementById("_MN").style.border = "1px solid red";
     }
 }
 
@@ -55,6 +79,7 @@ function AgeValidation(){
     if(parseInt(Age)<18 || parseInt(Age)>60){
         IsAge = false;
         document.getElementById("_Age").style.color = "red";
+        document.getElementById("_Age").style.border = "1px solid red";
         return;
     }
 
@@ -64,44 +89,38 @@ function AgeValidation(){
     {
         IsAge = true;
         document.getElementById("_Age").style.color = "black";
+        document.getElementById("_Age").style.border = "1px solid black";
     }
     else
     {
         IsAge = false;
         document.getElementById("_Age").style.color = "red";
+        document.getElementById("_Age").style.border = "1px solid red";
     }
 }
 
-var IsGender = false;
-function GenderValidation(){
+function GenderValidation()
+{
+    var IsGender = false;
     var radios = document.getElementsByName("gender");
-    
-    var ValidGender = false;
-
-    var i = 0;
-
-    while(!ValidGender &&i<radios.length)
+    var isGenderChecked = false;
+    for(let i = 0;i<radios.length;i++)
     {
         if(radios[i].checked)
         {
-            ValidGender = true;
+            isGenderChecked = true;
+            break;
         }
-        i++;
     }
-
-    if(!ValidGender)
+    if(isGenderChecked)
     {
-        IsGender = false;
-        document.getElementById("_gender").style.background = "rgba(16, 16, 209, 0.74)";
-        return false;
+        IsGender = true;
     }
     else
     {
-        IsGender = true;
-        document.getElementById("_gender").style.background = "rgba(219, 124, 52, 0.74)";
-        return true;
-
+        IsGender = false;
     }
+    return IsGender; 
 }
 
 function ButtonOver(){
@@ -126,7 +145,10 @@ function ButtonClick(){
         alert("ERROR - Invalid Mobile Number");
         return;
     }
-    ;
+    if(!IsAge)
+    {
+        alert("Error - Invalid Age");
+    }
     if(!GenderValidation())
     {
         alert("Error - Invalid Gender");
