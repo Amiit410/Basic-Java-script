@@ -72,8 +72,37 @@ function AgeValidation(){
     }
 }
 
+var IsGender = false;
+function GenderValidation(){
+    var radios = document.getElementsByName("gender");
+    
+    var ValidGender = false;
 
+    var i = 0;
 
+    while(!ValidGender &&i<radios.length)
+    {
+        if(radios[i].checked)
+        {
+            ValidGender = true;
+        }
+        i++;
+    }
+
+    if(!ValidGender)
+    {
+        IsGender = false;
+        document.getElementById("_gender").style.background = "rgba(16, 16, 209, 0.74)";
+        return false;
+    }
+    else
+    {
+        IsGender = true;
+        document.getElementById("_gender").style.background = "rgba(219, 124, 52, 0.74)";
+        return true;
+
+    }
+}
 
 function ButtonOver(){
     document.getElementById("_SubmitBtn").style.background = "rgba(16, 16, 209, 0.74)"
@@ -95,6 +124,12 @@ function ButtonClick(){
     if(!IsMobile)
     {
         alert("ERROR - Invalid Mobile Number");
+        return;
+    }
+    ;
+    if(!GenderValidation())
+    {
+        alert("Error - Invalid Gender");
         return;
     }
 }
