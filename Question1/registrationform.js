@@ -1,7 +1,7 @@
 var IsFullName = false;
 function fullnameValidation(){
     var fullname = document.getElementById("_FN").value;
-    var pattern = new RegExp(/^([A-Za-z]+)\s([A-Za-z]+)\s([A-Za-z]+)$/);
+    var pattern = new RegExp(/^([A-Za-z]+)\s([A-Za-z]+)$/);
     
     if(pattern.test(fullname))
     {
@@ -101,26 +101,52 @@ function AgeValidation(){
 
 function GenderValidation()
 {
-    var IsGender = false;
-    var radios = document.getElementsByName("gender");
-    var isGenderChecked = false;
-    for(let i = 0;i<radios.length;i++)
+    // var radios = document.getElementsByName("gender");
+    
+    // var isGenderChecked = false;
+    // for(let i = 0;i<radios.length;i++)
+    // {
+    //     if(radios[i].checked)
+    //     {
+    //         isGenderChecked = true;
+    //         break;
+    //     }
+    // }
+    // return isGenderChecked; 
+
+    var radios = document.querySelector("input[name = 'gender']:checked")
+
+    if(radios)
     {
-        if(radios[i].checked)
-        {
-            isGenderChecked = true;
-            break;
-        }
-    }
-    if(isGenderChecked)
-    {
-        IsGender = true;
+        return true;
     }
     else
     {
-        IsGender = false;
+        return false;
     }
-    return IsGender; 
+}
+
+
+function CourseValidation(){
+    // var Courses = document.getElementById("_Courses").value;
+
+    var Courses = document.querySelector("#_Courses");
+    var IsCourseSelected = false;
+    
+    if(Courses.value)
+    {
+        IsCourseSelected = true;
+        Courses.style.color = "black";
+    }
+    else
+    {
+        Courses.style.color = "red";
+        Courses.focus();
+        IsCourseSelected = false;
+    }
+
+
+    return IsCourseSelected;
 }
 
 function ButtonOver(){
@@ -131,6 +157,8 @@ function ButtonOut(){
 }
 
 function ButtonClick(){
+
+    document.getElementById("FinalLabel").style.display = "none";
     if(!IsFullName){
         alert("ERROR - Invalid Fullname");
         return;
@@ -148,11 +176,21 @@ function ButtonClick(){
     if(!IsAge)
     {
         alert("Error - Invalid Age");
+        return;
     }
     if(!GenderValidation())
     {
-        alert("Error - Invalid Gender");
+        alert("Error - Gender not Selected");
         return;
     }
+    if(!CourseValidation())
+    {
+        alert("Error - Course not selected");
+
+        return;
+    }
+    document.getElementById("FinalLabel").style.display = "block";
+
+    document.getElementById("FinalLabel").innerText = "Registration complete";
 }
 

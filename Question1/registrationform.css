@@ -29,6 +29,7 @@ td{
     width: 50px;
 }
 #_SubmitBtn{
+    /* align-items: center; */
     margin-top: 10px;
     height: 40px;
     width: 250px;
@@ -45,4 +46,8 @@ input{
 
 #body{
     background-color: beige;
+}
+
+#_div3{
+    margin-top: 5px;
 }
