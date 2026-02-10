@@ -190,7 +190,6 @@ function ButtonClick(){
         return;
     }
     document.getElementById("FinalLabel").style.display = "block";
-
     document.getElementById("FinalLabel").innerText = "Registration complete";
 }
 
