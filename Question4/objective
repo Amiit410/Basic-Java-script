@@ -1,0 +1,13 @@
+Objective:
+Create a Login Page.
+Requirements:
+ Fields:
+o Username
+o Password
+o Login button
+Validation Rules:
+ Username: admin
+ Password: admin123
+Functionality:
+ If credentials are correct → show Login Successful
+ If incorrect → show Invalid Username or Password
