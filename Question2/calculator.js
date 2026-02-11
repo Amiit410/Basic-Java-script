@@ -2,8 +2,8 @@ function ValidateInput(){
     var IsValidated = false;
     var value1 = document.getElementById("value1").value;
     var value2 = document.getElementById("value2").value;
-    var pattern1 = new RegExp(/^[0-9]{0,10}/);
-    var pattern2 = new RegExp(/^[0-9]{0,10}/);
+    var pattern1 = new RegExp(/^[0-9]{0,10}$/);
+    var pattern2 = new RegExp(/^[0-9]{0,10}$/);
 
     if(!value1)
     {
@@ -43,7 +43,6 @@ function Addition()
 {
     var val1 = parseFloat(document.getElementById("value1").value);
     var val2 = parseFloat(document.getElementById("value2").value);
-
     if(!ValidateInput()){
         return;
     }
