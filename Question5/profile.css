@@ -1,5 +1,6 @@
 #mainbody{
-    background-color:rgba(52, 98, 184, 0.563);
+    background : linear-gradient(to right,rgba(219, 30, 194, 0.886),rgba(52, 98, 184, 0.764));
+
 }
 
 #div1{
@@ -30,11 +31,12 @@ label,p{
     width: 160px;
     border-radius: 75px;
 }
-
 #namediv{
-    font-size: larger;
-    font-weight: bolder;
     margin-top: 12px;
+}
+#name{
+    font-size: 32px;
+    font-weight: bolder;
 }
 
 #rolediv{
