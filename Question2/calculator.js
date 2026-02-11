@@ -17,7 +17,7 @@ function ValidateInput(){
     }
     else
     {
-        document.getElementById("value1").style.border = "none"
+        document.getElementById("value1").style.border = "1px solid black"
         IsValidated = true;
     }
     if(!value2)
@@ -32,7 +32,7 @@ function ValidateInput(){
     }
     else
     {
-        document.getElementById("value2").style.border = "none"
+        document.getElementById("value2").style.border = "1px solid black"
         IsValidated = true;
     }
     return IsValidated;
