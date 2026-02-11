@@ -1,0 +1,10 @@
+Objective:
+Create an Image Gallery using HTML & CSS.
+Requirements:
+ Display at least 6 images in grid format.
+ On hover:
+o Zoom image
+o Show border
+o Show shadow effect
+Bonus:
+ Show image title on hover.

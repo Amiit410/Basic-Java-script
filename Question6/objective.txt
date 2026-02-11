@@ -1,0 +1,20 @@
+Objective:
+Create a Product Management Table.
+Requirements:
+ Form fields:
+o Product Name
+o Price
+o Quantity
+o Add button
+Functionality:
+ On Add:
+o Insert product data into a table dynamically.
+ Table columns:
+o Sr No
+o Product Name
+o Price
+o Quantity
+o Total Price
+o Action (Delete button)
+Calculation:
+Total Price = Price × Quantity
