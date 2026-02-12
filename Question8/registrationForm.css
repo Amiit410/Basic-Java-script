@@ -10,7 +10,7 @@
     display: inline inline-block;
     text-align: center;
     border: 1px solid red;
-    height: 310px;
+    height: 350px;
     width: 650px;
     border: 1px solid white;
     border-radius: 5px;
@@ -32,6 +32,7 @@
 }
 
 .inputs{
+    border: 2px solid rgb(34, 189, 245);
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 8px;
@@ -55,6 +56,11 @@ label{
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: text;
+    background: linear-gradient(45deg, #0a51e9, #e60e7a);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    /* -webkit-text-fill-color: transparent; */
 }
 td{
     text-align: start;
@@ -69,6 +75,7 @@ td{
     font-size: large;
     font-weight: bolder;
     font-family:'Times New Roman', Times, serif;
+    margin-bottom: 22px;
 }
 
 #submit:hover{

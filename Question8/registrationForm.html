@@ -11,23 +11,27 @@
         <table  id="table1">
             <tr id = tr1>
                 <td><label for="" id = "Usernamelabel">Username : </label></td>
-                <td><input type="text" class = "inputs" id = "username"></td>
+                <td><input type="text" class = "inputs" id = "username" onblur="ValidateUsername()"></td>
             </tr>
             <tr id="tr2">
                 <td><label for="" id = "Emaillabel">Email : </label></td>
-                <td><input type="text" class = "inputs" id = "Email"></td>
+                <td><input type="text" class = "inputs" id = "email" onblur=" ValidateEmail()" ></td>
             </tr>
             <tr id = "tr3">
                 <td><label for="" id = "passwordlabel">Password : </label></td>
-                <td><input type="password" class = "inputs" id = "password"></td>
+                <td><input type="password" class = "inputs" id = "password" onblur= "ValidatePassword()" onpaste = "return false"></td>
             </tr>
             <tr id="tr4">
                 <td><label for="" id = "Confirmpasslabel">Confirm Password : </label></td>
-                <td><input type="password" class = "inputs" id = "Confirmpass"></td>
+                <td><input type="password" class = "inputs" id = "confirmpass" onpaste = "return false"></td>
             </tr>
         </table>
         <div id="div1">
-            <input type="button" id="submit" value="Submit">
+            <input type="button" id="submit" value="Submit" onclick="Submit()">
+        </div>
+
+        <div id = "div2">
+            <label for="" id = "confirmationLabel"></label>
         </div>
     </div>
 
