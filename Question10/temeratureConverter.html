@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temeratureConverter.css">
+</head>
+<body id="mainbody">
+
+    <div id= "maindiv">
+        <div id="headingdiv">
+            <label for="" id="heading">Celcius To Fahrenheit</label>
+        </div>
+
+        <div id = "bodydiv">
+            <table id="maintable">
+                <tr id = "labeltr">
+                    <td>
+                        <label for="" class = "units" id="from">Celcius</label>
+                    </td>
+                        <td></td>
+                    <td>
+                        <label for="" class = "units" id="to">Fahrenheit</label>
+                    </td>
+                </tr>
+
+                <tr id="displaytr">
+                    <td>
+                        <input type="number" id="input" onkeyup="Convert()">
+                    </td>
+                    <td>
+                        <img src="icons/converticon.png" alt="converter" id = "icon" onclick="Change()">
+                    </td>
+                    <td>
+                        <input type="number" id="result" readonly>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <input type="button" value="Convert" id="convertbtn" onclick="Convert()">
+        </div>
+    </div>
+    
+
+    <script src="temeratureConverter.js"></script>
+</body>
+</html>
