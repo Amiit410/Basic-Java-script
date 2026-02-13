@@ -26,7 +26,7 @@ function fullnameValidation(){
 var IsEmail = false;
 function EmailValidation(){
     var Email = document.getElementById("_Email").value;
-    var pattern = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
+    var pattern = new RegExp(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/);
 
     if(pattern.test(Email))
     {
