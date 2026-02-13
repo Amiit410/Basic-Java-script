@@ -1,10 +1,3 @@
-var iphone17 = 143999;
-var samsungs24ultra = 132999;
-var hplaptop = 45999;
-var ipad = 142999;
-var playstation5 = 42999;
-var sonyheadphone = 22999;
-
 class products
 {
     constructor(productid,productname,productprice)
@@ -16,19 +9,59 @@ class products
 }
 
 var Arr = [];
-var product1 = new products();
+var product1 = new products("#1","HP elitebook 840g",45999);
 
-product1.productid = 1;
-product1.productname = "HP laptop";
-product1.productprice = 45999;
+// product1.productid = "#1";
+// product1.productname = "HP elitebook 840g";
+// product1.productprice = 45999;
 Arr.push(product1);
 
-document.writeln(product1.productid)
-document.writeln(product1.productname)
-document.writeln(product1.productprice)
+var product2 = new products("#2","Iphone 17 pro max",143999);
+Arr.push(product2);
 
-var product2 = new products();
+var product3 = new products("#3","Samsungs 24 ultra",132999);
+Arr.push(product3);
 
-product2.productid = 2;
-product2.productname = "iphone";
-product2.productprice = 145999;
+var product4 = new products("#4","Ipad pro",142999);
+Arr.push(product4);
+
+var product5 = new products("#5","Plastation 5",42999);
+Arr.push(product5);
+
+var product6 = new products("#6","Sony Headphone",22999);
+Arr.push(product6);
+
+var listcount = 1;
+var totalamount = 0;
+document.getElementById("totalamount").innerText = totalamount;
+
+function AddToCart(id)
+{
+    
+    for(var p of Arr)
+    {
+        if(p.productid === id)
+        {
+            document.getElementById("checkoutlist").innerHTML += 
+            `<tr id = "${listcount}">
+                <td>${listcount}</td>
+                <td>${p.productname}</td>
+                <td>${p.productprice}</td>
+                <td>1</td>
+                <td>${p.productprice * 1}</td>
+                <td><input type="button" value="del" id="delete" onclick = "RemoveFromList(${listcount},${p.productprice})"></td>
+            </tr>`;
+            totalamount += parseFloat(p.productprice);
+
+            document.getElementById("totalamount").innerText = totalamount;
+            listcount++;
+        }
+    }
+}
+
+function RemoveFromList(productcount,price)
+{
+    totalamount -= parseFloat(price);
+    document.getElementById(productcount).remove();
+    document.getElementById("totalamount").innerText = totalamount;
+}
