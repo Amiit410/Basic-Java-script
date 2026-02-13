@@ -30,6 +30,17 @@ Arr.push(product5);
 
 var product6 = new products("#6","Sony Headphone",22999);
 Arr.push(product6);
+var product7 = new products("#7","Thumps up",9);
+Arr.push(product7);
+
+var product8 = new products("#8","Burger",229);
+Arr.push(product8);
+
+var product9 = new products("#9","Cycle",3199);
+Arr.push(product9);
+
+var product10 = new products("#10","Coca Cola",11);
+Arr.push(product10);
 
 var listcount = 1;
 var totalamount = 0;
