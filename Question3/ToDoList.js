@@ -20,7 +20,7 @@ function AddTask(){
     document.getElementById("table2").innerHTML += `<tr id = "tr${inc}">
                     <td><label for="" class = "tasks" id = "settask${inc}">${task}</label></td>
                     <td><input type="checkbox" name = "settask${inc}" id = "CheckBox${inc}" onclick="TaskComplete(id,name)"></td>
-                    <td><input type="button" name = "settask${inc}" value = "Remove" id = "removetask${inc}" onclick=document.getElementById("tr${inc}").parentElement.remove()></td>
+                    <td><input type="button" name = "settask${inc}" value = "Remove" id = "removetask${inc}" onclick=document.getElementById("tr${inc}").remove()></td>
                 </tr>`
     inc++;
     document.getElementById("input").value = null;
