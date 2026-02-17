@@ -1,0 +1,121 @@
+#maindiv {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    box-shadow: inset 0 2px 8px rgb(50, 49, 49), 0 2px 4px rgb(73, 69, 69);
+    padding: 30px;
+}
+
+#div1 {
+    margin-bottom: 10px;
+    height: 100%px;
+    width: 100%;
+
+}
+
+#table1 {
+    margin: auto;
+    margin-top: 3.2px;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.tasks {
+    padding: 5px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tasks:hover {
+    box-shadow: 0 1px 2px rgb(79, 76, 76), 1px 2px rgb(94, 91, 91);
+    border-radius: 5px;
+
+}
+
+#table2 {
+    margin: auto;
+    margin-top: 3.2px;
+    height: 35px;
+    width: 80%;
+    border-spacing: 0cap;
+    padding-left: 10px;
+}
+
+#addtask {
+    height: 30px;
+    margin-left: 20px;
+    background: linear-gradient(65deg, rgb(250, 229, 38), rgb(247, 196, 42));
+    color: rgb(200, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+#addtask:hover{
+    cursor: pointer;
+    /* background-color: rgb(103, 236, 50); */
+    box-shadow: 0 1px 2px rgb(44, 42, 42), 0 1px 2px rgb(45, 44, 44);
+
+}
+
+[type="checkbox"]:hover {
+    box-shadow: 0 1px 2px rgb(83, 80, 80), 0 1px 2px rgb(143, 131, 131);
+}
+
+#input {
+    padding-left: 5px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    height: 34px;
+    border-radius: 12px;
+    width: 60%;
+    border: 1px solid rgba(128, 128, 128, 0.519);
+}
+
+#input:hover {
+    box-shadow: inset 0 1px 2px rgb(44, 42, 42), 0 1px 2px rgb(45, 44, 44);
+
+}
+
+#removetask {
+    height: 30px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: rgba(44, 44, 47, 0.613);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+#removetask:hover{
+    cursor: pointer;   
+    background-color: rgb(113, 245, 87);
+}
+
+#table2 tr td:nth-of-type(1){
+    background-color: transparent;
+    width: 45px;
+}
+#table2 tr td:nth-of-type(2){
+    background-color: transparent;
+    width: 845px;
+}
+
+#table2 tr td:nth-of-type(3){
+    background-color: transparent;
+    width: 40px;
+}
+
+#table2 tr td:nth-of-type(4){
+    background-color: rgb(139, 249, 139);
+    width: 100px;
+}
+
+#table2 tr td{
+    border: 1px solid rgb(203, 191, 191);
+}
+
