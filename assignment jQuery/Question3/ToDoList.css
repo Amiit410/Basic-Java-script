@@ -46,8 +46,8 @@
 #addtask {
     height: 30px;
     margin-left: 20px;
-    background: linear-gradient(65deg, rgb(250, 229, 38), rgb(247, 196, 42));
-    color: rgb(200, 0, 255);
+    background: linear-gradient(65deg, rgb(38, 250, 42), rgb(73, 247, 42));
+    color: rgba(0, 0, 0, 0.562);
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: bold;
@@ -63,6 +63,7 @@
 }
 
 [type="checkbox"]:hover {
+    cursor: pointer;
     box-shadow: 0 1px 2px rgb(83, 80, 80), 0 1px 2px rgb(143, 131, 131);
 }
 
@@ -93,7 +94,7 @@
 }
 #removetask:hover{
     cursor: pointer;   
-    background-color: rgb(113, 245, 87);
+    background-color: rgb(255, 3, 3);
 }
 
 #table2 tr td:nth-of-type(1){
@@ -111,10 +112,9 @@
 }
 
 #table2 tr td:nth-of-type(4){
-    background-color: rgb(139, 249, 139);
+    background: linear-gradient(to right,rgba(234, 36, 39, 0.93),rgb(255, 38, 38));
     width: 100px;
 }
-
 #table2 tr td{
     border: 1px solid rgb(203, 191, 191);
 }
