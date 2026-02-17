@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body id = "mainbody">
+    <div id = "div1">
+        <table id = "t1">
+            <tr>
+                <td colspan="4"><input type="text" class = "inputs" id = value1></td>
+            </tr>
+            
+            <tr>
+                <td colspan="4"><input type="text" class = "inputs" id = value2></td>
+            </tr>
+            <tr>
+                <td class = "btns"><input type="button" id = "add" value = "+" onclick="Addition()"></td>
+                <td class = "btns"><input type="button" id = "sub" value = "-" onclick="Substraction()"></td>
+                <td class = "btns"><input type="button" id = "mult" value = "x" onclick="Multiplication()"></td>
+                <td class = "btns"><input type="button" id = "div" value = "/" onclick="Division()"></td>
+            </tr>
+            <tr>
+                <td colspan = "4"><input type="text" id = "result" readonly></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
