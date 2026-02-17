@@ -20,7 +20,7 @@ $(function () {
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.id = `checkbox${tablelength + 1}`;
-        checkbox.addEventListener("click", function () {
+        $(checkbox).on("click", function () {
             var ischecked = $(`#${checkbox.id}`).is(":checked");
             if (ischecked) {
                 $(`#${td2.id}`).css("text-decoration", "line-through");
@@ -28,7 +28,7 @@ $(function () {
             else {
                 $(`#${td2.id}`).css("text-decoration", "none");
             }
-        })
+        });
 
         td3.appendChild(checkbox);
 
@@ -37,7 +37,7 @@ $(function () {
         btn.type = "button";
         btn.value = "del";
         btn.id = "removetask"
-        btn.addEventListener("click", function () {
+        $(btn).on("click", function () {
             $(`#${tr.id}`).remove();
         })
 
@@ -60,7 +60,7 @@ $(function () {
         }
     })
     $("body").keyup(function (e) {
-        if (e.key === "f") {
+        if (e.key === "f" && !$("#input").is(":focus")) {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen();
             }
