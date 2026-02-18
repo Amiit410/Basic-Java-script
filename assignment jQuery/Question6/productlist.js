@@ -122,9 +122,9 @@ $(function () {
         quantity.id = `quantity${tabellength}`;
 
         td5.textContent = item.productprice;
-        td4.appendChild(decrement);
-        td4.appendChild(quantity);
-        td4.appendChild(increment);
+        td4.append(decrement);
+        td4.append(quantity);
+        td4.append(increment);
         var input = document.createElement("input");
         input.type = "button";
         input.id = "delete";
