@@ -1,0 +1,69 @@
+#mainbody{
+    background : linear-gradient(to right,rgba(219, 30, 194, 0.886),rgba(52, 98, 184, 0.764));
+
+}
+
+#div1{
+    padding: 8px;
+    background-color:rgba(255, 230, 196, 0.886);
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    height: 400px;
+    width: 270px;
+    border : 1px solid rgb(34, 34, 34);
+    box-shadow: 0 1px 2px rgb(189, 187, 187),0 1px 2px rgb(196, 73, 73);
+    border-radius: 8px;
+}
+label,p{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pic{
+    margin-top: 18px;
+}
+#profilepic{
+
+    box-shadow: 0 1px 2px rgb(58, 58, 58),0 1px 2px rgb(94, 91, 91);
+    height: 160px;
+    width: 160px;
+    border-radius: 75px;
+}
+#namediv{
+    margin-top: 12px;
+}
+#name{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#rolediv{
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 12px;
+}
+
+#description{
+    opacity: 0.8;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    color: rgb(11, 11, 11);
+}
+
+.icons{
+    margin: auto;
+    margin-top: 12px;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.icons:hover{
+    box-shadow: 0 1px 2px red,0 1px 2px red;
+}
