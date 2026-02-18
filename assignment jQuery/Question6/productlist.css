@@ -1,0 +1,139 @@
+#mainbody{
+    background-color: rgba(211, 211, 211, 0.725);
+}
+
+#maindiv{
+    display: flex;
+
+}
+
+#productdiv{
+    display: inline-flexbox;
+    margin: 10px;
+    height: 100%;
+    width: 60%;
+    padding: 5px;
+}
+
+#checkoutdiv{
+    display: inline-block;
+    margin: 10px;
+    height: 800px;
+    width: 35%;
+}
+
+.products{
+    margin: 6px;
+    background-color: aqua;
+    height: 340px;
+    text-align: start;
+    width: 220px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+
+.productimage{
+    height: 220px;
+    width: 220px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgb(156, 153, 153),0 1px 2px gray;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.productname{
+    font-size: large;
+    font-weight: bold;
+    font-family: serif;
+    opacity: 0.8;
+    color: black;
+}
+
+.productprice{
+    font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    opacity: 0.8;
+    color: black;
+}
+
+.productadd{
+    margin-left: 40px;
+    height: 26px;
+    width: 120px;
+    background:linear-gradient(45deg,rgba(0, 128, 0, 0.498),rgba(0, 0, 255, 0.527));
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px green,0 1px 2px blue;
+    border-color: black;
+}
+
+.productadd:hover{
+    background:linear-gradient(45deg,rgba(0, 128, 0, 0.765),rgba(0, 0, 255, 0.829));
+    box-shadow: 0 2px 4px green,0 2px 4px blue;
+    cursor: pointer;
+}
+
+
+#checkouttable{
+    border-collapse: collapse;
+    border-color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#checkouthead{
+    background-color: lightblue;
+}
+
+th,td{
+    padding: 5px;
+    font-size: 14px;
+}
+
+tfoot{
+    text-align: end;
+    background-color: rgba(144, 238, 144, 0.617);
+    font-size: large;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+tbody{
+    background-color: lightcoral;
+}
+
+#delete{
+    height: 100%;
+    width:100%;
+    background: linear-gradient(to right,rgba(7, 1, 1, 0.716),rgba(28, 28, 29, 0.672));
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 1px 2px red,0 1px 2px blue;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+#delete:hover{
+    box-shadow: 0 4px 8px red,0 4px 8px blue;
+    background: linear-gradient(to right,red,blue);
+}
+
+#checkoutlist tr td:nth-of-type(4){
+    text-align: center;
+}
+
+.quantity{
+    text-align: center;
+    padding-left: 15px;
+    width: 20%;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
