@@ -1,0 +1,86 @@
+
+.mainbody{
+    background-color: rgba(196, 194, 194, 0.229);
+}
+
+
+#div1{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid rgb(243, 241, 241);
+    height : 300px;
+    width: 380px;
+    background-color: #cdc4c457;
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.input{
+    height: 40px;
+    width: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    border-radius: 6px;
+    border: 1px solid rgba(24, 24, 24, 0.331);
+    box-shadow: 0 1px 2px #0000001a,0 1px 2px #0000001a;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0.853);
+}
+
+#div1{
+    align-items: center;
+    margin-top: 72px;
+}
+
+#label1{
+    color: rgba(0, 0, 255, 0.592);
+    font-size: 24px;
+}
+
+#div3{
+    margin-top: 12px;
+}
+#div4{
+    margin-top: 12px;
+}
+
+#div5{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#loginbtn{
+    background-color: rgba(9, 112, 230, 0.783);
+    text-align: center;
+    font-size: medium;
+    color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    width: 375px;
+}
+
+#loginbtn:hover{
+    background-color: rgb(9, 112, 230);
+    box-shadow: 0 2px 4px rgb(161, 158, 158),0 2px 4px rgb(183, 174, 174);
+    cursor: pointer;
+}
+#div6{
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+#span1,#span2{
+    padding: 10px;
+}
+
+#div7{
+    margin: auto;
+    margin-top: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}

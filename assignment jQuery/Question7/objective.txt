@@ -1,0 +1,11 @@
+Objective:
+Create a Live Digital Clock.
+Requirements:
+ Display current:
+o Hours
+o Minutes
+o Seconds
+Functionality:
+ Time should update every second automatically.
+Bonus:
+ Show date (DD-MM-YYYY).

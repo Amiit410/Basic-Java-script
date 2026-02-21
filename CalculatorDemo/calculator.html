@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="divtable1">
+        <table id="table1">
+            <thead class="t1head">
+                <tr id="t1hr1">
+                    <!-- <td colspan="4"><input type="text" class="show" id="_result" ></td> -->
+                    <td colspan="4" id="thr1d1"><textarea class = "show" name="IO" id="_result" readonly></textarea></td>
+                </tr>
+                <tr id="t1hr2">
+                    <!-- <td colspan="4"><input type="text" class="show" id="_result" ></td> -->
+                    <td colspan="4" id="thr2d1"><textarea class = "show" name="IO" id="_input" readonly></textarea></td>
+                </tr>
+                
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td><input type="button" class = "Task" id="_clr" value = "clr" onclick="_clear()"></td>
+                    <td><input type="button" class = "Task" id="_add" value = "+" onclick="_operation(value)"></td>
+                    <td><input type="button" class = "Task" id="_sub" value = "-" onclick="_operation(value)"></td>
+                    <td><input type="button" class = "Task" id="_mult" value = "x" onclick="_operation(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_1" value = "1" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_2" value = "2" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_3" value = "3" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "Task" id="_div" value = "/" onclick="_operation(value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_4" value = "4" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_5" value = "5" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_6" value = "6" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "Task" id="_equals" value = "=" onclick="result()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_7" value = "7" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_8" value = "8" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_9" value = "9" onclick="_digit(id)"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class = "digits" id="_dot" value = "." onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_0" value = "0" onclick="_digit(id)"></td>
+                    <td><input type="button" class = "digits" id="_00" value = "00" onclick="_digit(id)"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="calculator.js">
+    </script>
+</body>
+</html>

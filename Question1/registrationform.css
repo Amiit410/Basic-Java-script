@@ -1,0 +1,73 @@
+#_Div1{
+    text-align: center;
+    box-shadow:  0 2px 4px #16131368, 0 8px 16px #0000001a;
+    margin: auto;
+    height: 270px;
+    width: 400px;
+    background-color: #d9cfcf22;
+    border: 1px solid rgba(82, 28, 28, 0.4);
+    padding: 10px;
+    margin-top: 80px;
+    border-radius: 8px;
+}
+.input{
+    height: 22px;
+    width: 250px;
+    border: 1px solid rgb(176, 171, 171);
+    box-shadow: 0 1px 1px rgba(124, 121, 121, 0.471), 0 1px 1px rgba(120, 117, 117, 0.31);
+    border-radius: 5px;
+    padding-left: 8px;
+}
+td{
+    text-align: start;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+#_Age{
+    text-align: center;
+    height: auto;
+    width: 50px;
+}
+#_SubmitBtn{
+    /* align-items: center; */
+    margin-top: 10px;
+    height: 40px;
+    width: 250px;
+    box-shadow: 0 2px 1px rgb(167, 118, 118),0 2px 4px rgb(152, 101, 101);
+    background-color: rgba(16, 16, 209, 0.58);
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+input{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#body{
+    background-color: beige;
+}
+
+#_div3{
+    margin-top: 5px;
+}
+
+#_div4{
+    margin-bottom: 5px;
+    height: 25px;
+    width: auto;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgba(83, 162, 227, 0.708);
+    box-shadow: 0 1px 1px rgb(45, 33, 33),0 1px 1px rgb(45, 33, 33);
+    color: rgb(17, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
+    border-radius: 3px;
+}
+/* 
+#Heading{
+    
+} */

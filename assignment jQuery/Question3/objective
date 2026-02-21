@@ -1,0 +1,13 @@
+Objective:
+Create a To-Do List App.
+Requirements:
+ Input box to enter task.
+ Add Task button.
+ Display list of tasks below.
+Functionality:
+ Add tasks dynamically.
+ Each task should have:
+o Delete button
+ On delete, remove task from list.
+Bonus:
+ Mark task as completed using checkbox & apply line-through effect.

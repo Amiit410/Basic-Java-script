@@ -1,0 +1,26 @@
+#mainbody{
+    background-color: lightcoral;
+}
+#timediv{
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+
+
+}
+label{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#currenttime{
+    font-size: 150px;
+    font-weight: bold;
+
+}
+#datediv{
+    text-align: end;
+}
+#date{
+    /* font-variant: small-caps; */
+    font-size: 30px;
+}

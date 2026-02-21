@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productlist.css">
+</head>
+<body id="mainbody">
+    <div id="maindiv">
+        <div id = "productdiv">
+            <div class = "products">
+                <img src="images/hplaptop.png" alt="product image"class = "productimage" id = "Hplaptop">
+                <p class="productname">HP elitebook 840g</p>
+                <p class="productprice">₹45,999 </p>
+                <input type="button" class = "productadd" value="add to cart" id = "#1" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/iphone17.jpeg" alt="product image"class = "productimage" id = "iphone17">
+                <p class="productname">Iphone 17 pro max</p>
+                <p class="productprice">₹1,43,999 Rs</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#2" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/samsungs24ultra.jpeg" alt="product image"class = "productimage" id = "samsungs24ultra">
+                <p class="productname">Samsungs 24 ultra</p>
+                <p class="productprice">₹1,32,999</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#3" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/ipad.png" alt="product image"class = "productimage" id = "ipad">
+                <p class="productname">Ipad pro</p>
+                <p class="productprice">₹1,42,999</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#4" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/plastation5.png" alt="product image"class = "productimage" id = "plastation5">
+                <p class="productname">Play station 5</p>
+                <p class="productprice">₹42,999</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#5" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/sonyheadphone.jpeg" alt="product image"class = "productimage" id = "sonyheadphone">
+                <p class="productname">Sony Headphone </p>
+                <p class="productprice">₹22,999</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#6" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/thumpsup.webp" alt="product image"class = "productimage" id = "thumpsup">
+                <p class="productname">Thumps up </p>
+                <p class="productprice">₹9</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#7" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/burger.png" alt="product image"class = "productimage" id = "burger">
+                <p class="productname">Burger</p>
+                <p class="productprice">₹229</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#8" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/cycle.jpg" alt="product image"class = "productimage" id = "cycle">
+                <p class="productname">Cycle</p>
+                <p class="productprice">₹3199</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#9" onclick="AddToCart(id)">
+            </div>
+            <div class = "products">
+                <img src="images/cocacola.jpeg" alt="product image"class = "productimage" id = "cocacola">
+                <p class="productname">Coca Cola</p>
+                <p class="productprice">₹11</p>
+                <input type="button" class = "productadd" value="add to cart" id = "#10" onclick="AddToCart(id)">
+            </div>
+        </div>
+
+        <div id="checkoutdiv">
+            <table id="checkouttable" border="2">
+                <thead id="checkouthead">
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id = "checkoutlist">
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total Amount</td>
+                        <td id = "totalamount" colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="productlist.js"></script>
+</body>
+</html>

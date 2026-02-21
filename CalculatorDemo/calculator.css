@@ -1,0 +1,48 @@
+.show{
+    color: rgb(244, 237, 237);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    width: 290px;
+    height: 40px;
+    background-color: #444746;
+    border-radius:8px;
+    resize: none;
+    border: 2px solid rgb(105, 15, 196);
+
+}
+
+.digits{
+    color: aliceblue;
+    border-radius: 15px;
+    width: 72px;
+    height: 41px;
+    border: 1px solid rgb(92, 25, 226);
+    background-color:rgb(76, 78, 81);
+    font-size: large;
+
+}
+
+.Task{
+    border-radius: 15px;
+    width: 72px;
+    height: 41px;
+    border: 1px solid rgb(236, 98, 6);
+    background-color:rgb(181, 197, 227);
+    font-size: large;
+}
+
+#_clr{
+    background-color: rgb(224, 56, 37);
+}
+
+#table1{
+    /* border: 1px solid rgb(76, 78, 81); */
+    border-radius: 15px;
+    background-color: rgba(8, 8, 8, 0.456);
+    border-collapse: collapse;
+    
+
+}
+.divtable{
+    display: inline;
+}

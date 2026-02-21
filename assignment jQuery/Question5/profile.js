@@ -1,0 +1,11 @@
+$(function(){
+    $("#_linkedin").click(function(){
+        window.open("https://www.linkedin.com/in/amitkumar-s-l-397432143/","_blanck");
+    })
+    $("#_github").click(function(){
+        window.open("https://github.com/Amiit410","_blanck");
+    })
+    $("#_insta").click(function(){
+        window.open("https://www.instagram.com/amiit4_10/","_blanck");
+    })
+})

@@ -1,0 +1,17 @@
+Objective:
+Create a User Registration Form with strong validation.
+Fields:
+ Username
+ Email
+ Password
+ Confirm Password
+Validation Rules:
+ Username → minimum 5 characters
+ Email → valid email format
+ Password →
+o Minimum 8 characters
+o At least 1 uppercase
+o 1 lowercase
+o 1 digit
+o 1 special character
+ Confirm password must match password.

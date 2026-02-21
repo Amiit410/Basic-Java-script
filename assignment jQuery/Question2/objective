@@ -1,0 +1,16 @@
+Objective:
+Create a Simple Calculator using HTML, CSS, and JavaScript.
+Requirements:
+ Two input fields for numbers.
+ Four buttons:
+o Add
+o Subtract
+o Multiply
+o Divide
+Functionality:
+ On button click, perform the selected operation.
+ Display result below the buttons.
+Validation:
+ Inputs should not be empty.
+ Inputs should allow only numbers.
+ Handle division by zero.

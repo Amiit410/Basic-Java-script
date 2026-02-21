@@ -1,0 +1,21 @@
+Objective:
+Create a Student Registration Form using HTML, CSS, and JavaScript.
+Requirements:
+  Fields:
+o  Full Name
+o  Email
+o  Mobile Number
+o  Age
+o  Gender (Radio buttons)
+o  Course (Dropdown)
+o  Submit button
+Validation Rules:
+  Name should not be empty.
+  Email should be in proper format.
+  Mobile number should contain exactly 10 digits.
+  Age should be between 18 and 60.
+  All fields are mandatory.
+Output:
+  Show validation messages below each field.
+  On successful submission, display:
+  Registration Successful!

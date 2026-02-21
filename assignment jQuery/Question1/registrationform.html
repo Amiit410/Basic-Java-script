@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registrationform.css">
+</head>
+
+<body id="body">
+    <div id="_Div1">
+        <table>
+            <div id="_div4">
+                <label for="" id="Heading">Student registration form</label>
+            </div>
+            <tr>
+                <td><label for="" id="_FNlabel">Full Name : </label></td>
+                <td><input type="text" id="_FN" class="input"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="_EmailLabel">Email : </label></td>
+                <td><input type="text" id="_Email" class="input"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="_MNlabel">Mobile Number : </label></td>
+                <td><input type="text" id="_MN" class="input"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="_AgeLabel">Age : </label></td>
+                <td><input type="number" id="_Age" class="input"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="_GenderLabel">Gender : </label></td>
+                <td>
+                    <input type="radio" name="gender" id="_male"><label for="" id="MaleLabel">Male</label>
+                    <input type="radio" name="gender" id="_female"><label for="" id="femaleLabel">female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="" id="_CourseLabel">Course : </label></td>
+                <td>
+                    <select name="Course" id="_Courses">
+                        <option value="">-- Select Course --</option>
+                        <option class="Courses" value="Dot net">Dot net</option>
+                        <option class="Courses" value="Springboot">Springboot</option>
+                        <option class="Courses" value="Data Science">Data Science</option>
+                        <option class="Courses" value="Gen AI">Gen AI</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div id="_div2">
+            <input type="button" value="Submit" id="_SubmitBtn">
+        </div>
+        <div id="_div3">
+            <label for="" id="FinalLabel"></label>
+        </div>
+    </div>
+
+    <script src="jQueryScript/jQuery.js"></script>
+    <script src="registrationform.js"></script>
+</body>
+
+</html>

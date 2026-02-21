@@ -1,0 +1,86 @@
+#mainbody{
+    background:linear-gradient(to right,lightpink,lightcyan)
+}
+
+
+#maindiv{
+    padding: 5px;
+    margin: auto;
+    margin-top: 100px;
+    display: inline inline-block;
+    text-align: center;
+    border: 1px solid red;
+    height: 350px;
+    width: 650px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 8px rgb(163, 136, 136),0 4px 8px rgb(94, 71, 71);
+}
+
+
+
+#table1{
+    margin: auto;
+    /* border-collapse: collapse; */
+    border-spacing: 0cap;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+#table1 tr{
+    height: 60px;
+}
+
+.inputs{
+    border: 2px solid rgb(34, 189, 245);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 8px;
+    height: 30px;
+    width: 400px;
+    margin-left:10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgb(14, 195, 215),0 1px 2px rgb(20, 154, 203);
+    background: linear-gradient(to right,rgba(255, 182, 193, 0.506),rgba(224, 255, 255, 0.648));
+
+}
+
+.inputs:hover{
+    box-shadow: 0 2px 4px rgb(14, 195, 215),0 2px 4px rgb(20, 154, 203);
+    border-color:rgb(103, 183, 237) ;
+}
+
+label{
+    opacity: 0.8;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: text;
+    background: linear-gradient(45deg, #0a51e9, #e60e7a);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    /* -webkit-text-fill-color: transparent; */
+}
+td{
+    text-align: start;
+}
+
+#submit{
+    height: 32px;
+    width: 120px;
+    background: linear-gradient(to right,rgba(2, 211, 253, 0.871),rgba(0, 17, 255, 0.778));
+    color: linen;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 22px;
+}
+
+#submit:hover{
+    background: linear-gradient(to right,rgb(2, 211, 253),rgb(0, 17, 255));
+    box-shadow: 0 2px 4px rgb(0, 200, 255),0 2px 4px blue;
+    border-color: white;
+    cursor: pointer;
+}

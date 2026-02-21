@@ -1,0 +1,14 @@
+Create a Profile Card UI using HTML and CSS.
+Requirements:
+ Profile Image
+ Name
+ Role
+ Short description
+ Social media icons
+CSS Requirements:
+ Use:
+o Flexbox
+o Border radius
+o Box shadow
+o Hover effect
+ Card should be centered and responsive.
