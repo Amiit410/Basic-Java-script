@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/select2.css">
+    <link rel="stylesheet" href="style/Bootstrap.css">
+</head>
+
+<body class="container">
+    <h1>Country State City API</h1>
+
+
+    <div class="container m-3">
+        <select id="country" class="col-2">
+            <option value="">-- Select Country --</option>
+        </select>
+        <select id="state" disabled class="col-2">
+            <option value="">-- Select State --</option>
+        </select>
+        <select id="city" disabled class="col-2">
+            <option value="">-- Select City --</option>
+        </select>
+    </div>
+
+
+    <script src="Scripts/jQuery.js"></script>
+    <script src="Scripts/select2.js"></script>
+    <script>
+        $(function () {
+            $("#country").select2();
+            $("#state").select2();
+            $("#city").select2();
+
+            $.ajax({
+                url: "https://api.countrystatecity.in/v1/countries",
+                headers: {
+                    "X-CSCAPI-KEY":
+                        "M2NIU2twTjR6a2xpa0M4MWROc05OdTR1NlNmZXpaMWJIMjFLdGhWcg=="
+
+                },
+                type: "GET",
+                success: function (response) {
+                    for (var country of response) {
+                        $("#country").append(`<option value = ${country.iso2}>${country.name}</option>`)
+                    }
+                },
+                error: function () {
+                    alert("could not load countries");
+                }
+            })
+            $("#country").change(function () {
+                var country = $("#country").val();
+                $("#state").empty();
+                $("#state").append(`<option>-- Select State --</option>`)
+                $("#state").attr("disabled", false);
+                $.ajax({
+                    url: `https://api.countrystatecity.in/v1/countries/${country}/states`,
+                    headers: {
+                        "X-CSCAPI-KEY":
+                            "M2NIU2twTjR6a2xpa0M4MWROc05OdTR1NlNmZXpaMWJIMjFLdGhWcg=="
+                    },
+                    type: "GET",
+                    success: function (response) {
+
+                        for (var state of response) {
+                            $("#state").append(`<option value = ${state.iso2}>${state.name}</option>`)
+                        }
+                    },
+                    error: function () {
+                        alert("could not load countries");
+                    }
+                })
+            })
+
+            $("#state").change(function () {
+                var country = $("#country").val();
+                var state = $("#state").val();
+                $("#city").empty();
+                $("#city").append(`<option>-- Select City --</option>`)
+                $("#city").attr("disabled", false);
+                $.ajax({
+                    url: `https://api.countrystatecity.in/v1/countries/${country}/states/${state}/cities`,
+                    headers: {
+                        "X-CSCAPI-KEY":
+                            "M2NIU2twTjR6a2xpa0M4MWROc05OdTR1NlNmZXpaMWJIMjFLdGhWcg=="
+                    },
+                    type: "GET",
+                    success: function (response) {
+
+                        for (var city of response) {
+                            $("#city").append(`<option>${city.name}</option>`)
+                        }
+                    },
+                    error: function () {
+                        alert("could not load countries");
+                    }
+                })
+            })
+
+        })
+    </script>
+</body>
+
+</html>
